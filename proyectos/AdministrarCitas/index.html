@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+</head>
+<body>
+    
+    <div class="row mx-4 mt-4">
+        <div class="col-md-1">
+            <a href="#">
+            <img src="img/pet-care-01.jpg" class="rounded-circle" alt="Logo veterinaria" style="width: 150px;">
+            </a>
+        </div>
+        <div class="col-md-11">
+            <h2 class="text-center my-5 titulo">Administrador de Pacientes | Veterinaria</h2>
+        </div>
+    </div>
+    
+    <div class="container mt-5 p-5 rounded-4">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-cita">
+                <form id="nueva-cita">
+                    <legend class="mb-4">Datos del Paciente</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Nombre Mascota:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="mascota" name="mascota" class="form-control" placeholder="Nombre Mascota">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Propietario:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="propietario" name="propietario" class="form-control"  placeholder="Nombre Dueño de la Mascota">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telefono" name="telefono" class="form-control"  placeholder="Número de Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" id="hora" name="hora" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Sintomas:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <textarea id="sintomas" name="sintomas" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group pt-2">
+                            <button type="submit" class="btn btn-primary w-100 d-block">Crear Cita</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4">Administra tus Citas</h2>
+                <ul id="citas" class="list-group lista-citas"></ul>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+    <!-- Footer -->
+    <footer class="py-5 px-lg-5">
+        <div class="container rounded-4">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">Copyright (c) 2023 Emerson Solano.</p>
+                </div>
+                <div class="col-auto">
+                    <div class="social-icons my-2">
+                        <a href="https://www.linkedin.com/in/emerson-s-24786247" target="_blank"><i class="lab la-linkedin"></i></a>
+                        <a href="https://github.com/Emerson93gh" target="_blank"><i class="lab la-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //Footer -->
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
